@@ -1,0 +1,29 @@
+###
+# Login APi
+POST http://localhost:8000/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "identity": "ruxios@mail.com",
+  "password": "1234567"
+}
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost:8000/api/auth/me HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/post HTTP/1.1
+Content-Type: application/json
+
+{
+  "message": "HELLO WORLD"
+}
