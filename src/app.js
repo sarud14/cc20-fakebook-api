@@ -9,7 +9,6 @@ app.use(express.json());
 
 app.use("/api/auth", authRoute);
 app.use("/api/post", (req, res) => {
-  console.log(x);
   res.json({ body: req.body });
 });
 app.use("/api/comment", (req, res) => {
