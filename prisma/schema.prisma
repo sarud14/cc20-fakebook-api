@@ -21,8 +21,8 @@ model User {
   email        String?        @unique
   mobile       String?        @unique
   password     String
-  profileImage String
-  coverImage   String
+  profileImage String?
+  coverImage   String?
   createAt     DateTime       @default(now())
   updateAt     DateTime       @updatedAt @db.Timestamp(0)
   posts        Post[]
